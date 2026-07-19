@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Друзья на Веки</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,600&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- ======================= ШАПКА САЙТА ======================= -->
+  <header class="topbar">
+    <div class="topbar__side topbar__side--left">
+      <span class="topbar__label">создатель сайта</span>
+      <span class="topbar__creator">Хыдыр Алиев</span>
+      <a class="topbar__phone" href="tel:+994552160628">📞 055 216 06 28</a>
+    </div>
+
+    <div class="topbar__center">
+      <span class="topbar__pin">📌</span>
+    </div>
+
+    <div class="topbar__side topbar__side--right">
+      <span class="topbar__slogan">Друзья на Веки</span>
+    </div>
+  </header>
+
+  <!-- ======================= ГЕРОЙ / ВСТУПЛЕНИЕ ======================= -->
+  <section class="hero">
+    <p class="hero__eyebrow">наша маленькая компания</p>
+    <h1 class="hero__title">10 окошек, <span>одна</span> история</h1>
+    <p class="hero__sub">Нажми на окошко друга, чтобы узнать о нём всё — и посмотреть, сколько осталось до его дня рождения.</p>
+  </section>
+
+  <!-- ======================= ГАЛЕРЕЯ ОКОШЕК ======================= -->
+  <main class="gallery" id="gallery">
+    <!-- карточки создаются в script.js -->
+  </main>
+
+  <!-- ======================= МОДАЛЬНОЕ ОКНО (профиль) ======================= -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal" id="modal" role="dialog" aria-modal="true">
+      <button class="modal__close" id="modalClose" aria-label="Закрыть">✕</button>
+      <div class="modal__content" id="modalContent"></div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>сделано с 🧵 для нашей компании — <strong>Друзья на Веки</strong></p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
